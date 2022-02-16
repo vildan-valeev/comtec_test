@@ -1,7 +1,7 @@
 # Settings backend
 Template for quick start project with Docker, Django, Dramatiq, Caddy, Gunicorn
 
-
+if idle is Pycharm, make "app" dir to SourceRoot 
 
 ## local
 ```sh
