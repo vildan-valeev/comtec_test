@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from manual.models import Manual
+from manual.models import Manual, Item
 
 
 class ManualListSerializer(serializers.ModelSerializer):
@@ -19,12 +19,15 @@ class ManualListSerializer(serializers.ModelSerializer):
 
 
 class ManualListAsOfDateSerializer(ManualListSerializer):
+    """
+
+    """
     pass
 
-#
-# class ManualInstanceSerializer(serializers.ModelSerializer):
-#     """Сериализатор Элемент справочника"""
-#
-#     class Meta:
-#         model = ManualInstance
-#         fields = '__all__'
+
+class ItemListSerializer(serializers.ModelSerializer):
+    """Сериализатор Элемент справочника"""
+
+    class Meta:
+        model = Item
+        fields = '__all__'

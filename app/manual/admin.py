@@ -6,29 +6,31 @@ from manual.serices.item_list_filter import ItemsIncomingToVersionFilter
 
 
 class ManualTabular(admin.TabularInline):
+    """ """
     model = Manual
-    # max_num = 0
-    extra = 0
-    # readonly_fields = ['version']
+    extra = 0  # убраны пустые шаблоны для заполнения
 
 
 class ManualBaseAdmin(admin.ModelAdmin):
+    """ """
     list_display = ['id', 'name', 'short_name']
     readonly_fields = ['id']
     inlines = [ManualTabular, ]
 
 
 class ManualAdmin(admin.ModelAdmin):
+    """ """
     list_display = ['id', 'manual_base', 'version', 'enable_date']
     readonly_fields = ['name', 'short_name', 'description']
 
 
 class ItemAdmin(admin.ModelAdmin):
+    """ """
     # manual_version, manual_name подтягиваются из методов в Item - не путать с полями ManualVersion
     list_display = ['id', 'code', 'summary', 'manual_name', 'manual_version']
     readonly_fields = ['manual_name', 'manual_version', 'manual_date']
     list_filter = ['manual', 'manual__manual_base', ItemsIncomingToVersionFilter]
-    date_hierarchy = 'manual__enable_date'
+    date_hierarchy = 'manual__enable_date'  # верхняя фильтрация по дате
     actions_on_bottom = True
 
 

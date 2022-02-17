@@ -11,12 +11,17 @@ logger = logging.getLogger(__name__)
 class Command(BaseCommand):
     help = 'Generate random data to db'
 
-    def init_data(self):
-        if not ManualBase.objects.exists():
+    def init_data(self) -> str:
+        """
+
+        :return:
+        """
+        if not ManualBase.objects.exists():  # Если ManualBase не пустая, не создаем данные
             gen_fixtures()
             return "ОК выполнено!"
         return 'В бд уже есть данные...'
 
     def handle(self, *args, **options):
-        print('Start create data in db')
+        """ """
+        logger.info('Start create data in db')
         return self.init_data()

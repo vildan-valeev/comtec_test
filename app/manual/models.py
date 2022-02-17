@@ -4,6 +4,9 @@ import uuid
 
 
 class ManualBase(models.Model):
+    """
+    Базовый класс справочника
+    """
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID", editable=False)
     name = models.CharField(max_length=200)
     short_name = models.CharField(max_length=50)
@@ -19,6 +22,9 @@ class ManualBase(models.Model):
 
 
 class Manual(models.Model):
+    """
+    Справочник
+    """
     manual_base = models.ForeignKey(ManualBase, on_delete=models.PROTECT,)
     version = models.CharField(max_length=50, null=False, blank=False)
     enable_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=False, blank=False, verbose_name='Дата',
@@ -50,6 +56,9 @@ class Manual(models.Model):
 
 
 class Item(models.Model):
+    """
+    Элемент справочника
+    """
     manual = models.ForeignKey(Manual, on_delete=models.PROTECT)
     code = models.CharField(max_length=20)
     summary = models.TextField(max_length=1000, help_text="Description of the Manual")
