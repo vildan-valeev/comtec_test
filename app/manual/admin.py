@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
 
-
 from manual.models import ManualVersion, Manual, Item
 from manual.serices.item_list_filter import ItemsIncomingToVersionFilter
 
@@ -29,6 +28,8 @@ class ItemAdmin(admin.ModelAdmin):
     readonly_fields = ['manual', 'version']
     list_filter = ['manual_version', 'manual_version__manual', ItemsIncomingToVersionFilter]
     date_hierarchy = 'manual_version__enable_date'
+    save_on_top = True
+
 
 admin.site.register(Item, ItemAdmin)
 admin.site.register(Manual, ManualAdmin)

@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
 import uuid
@@ -35,13 +36,12 @@ class ManualVersion(models.Model):
     def __str__(self):
         return f'{self.manual} - {self.version}'
 
+    def clean(self):
+        """Проверка поля version"""
+        print('Проверка')
 
-    # def clean(self):
-    #     """Проверка поля version"""
-    #     print('Проверка')
-    #     if self.__class__.objects.filter(manual__id=self.manual.id, version=self.version).exists():
-    #         raise ValidationError(f'Версия "{self.version}" уже существует!')
-
+        if self.__class__.objects.filter(manual__id=self.manual.id, version=self.version).exclude(pk=self.pk).exists():
+            raise ValidationError(f'Версия "{self.version}" уже существует!')
 
 
 class Item(models.Model):
@@ -58,7 +58,13 @@ class Item(models.Model):
         return f'{self.id} | {self.code} | {self.summary}'
 
     def manual(self):
+        """Вывод справочника элемента"""
         return self.manual_version.manual
 
     def version(self):
+        """Вывод версии справочника элемента"""
         return self.manual_version.version
+
+    def date(self):
+        """Вывод даты версии справочника элемента"""
+        return self.manual_version.enable_date
