@@ -135,4 +135,7 @@ cython_debug/
 /postgres_data
 __pycache__/
 
-#local_settings.py
+
+.env
+local_settings.py
+db.sqlite3

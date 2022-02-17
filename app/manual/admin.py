@@ -1,40 +1,38 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
 
-from manual.models import ManualVersion, Manual, Item
+from manual.models import Manual, ManualBase, Item
 from manual.serices.item_list_filter import ItemsIncomingToVersionFilter
 
 
-class ManualVersionTabular(admin.TabularInline):
-    model = ManualVersion
+class ManualTabular(admin.TabularInline):
+    model = Manual
     # max_num = 0
     extra = 0
     # readonly_fields = ['version']
 
 
-class ManualAdmin(admin.ModelAdmin):
+class ManualBaseAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'short_name']
     readonly_fields = ['id']
-    inlines = [ManualVersionTabular, ]
+    inlines = [ManualTabular, ]
 
 
-class ManualVersionAdmin(admin.ModelAdmin):
-    list_display = ['id', 'manual', 'version', 'enable_date']
+class ManualAdmin(admin.ModelAdmin):
+    list_display = ['id', 'manual_base', 'version', 'enable_date']
+    readonly_fields = ['name', 'short_name', 'description']
 
 
 class ItemAdmin(admin.ModelAdmin):
-    # version, manual подтягиваются из методов в Item - не путать с полями ManualVersion
-    list_display = ['id', 'code', 'summary', 'manual', 'version']
-    readonly_fields = ['manual', 'version']
-    list_filter = ['manual_version', 'manual_version__manual', ItemsIncomingToVersionFilter]
-    date_hierarchy = 'manual_version__enable_date'
-    save_on_top = True
+    # manual_version, manual_name подтягиваются из методов в Item - не путать с полями ManualVersion
+    list_display = ['id', 'code', 'summary', 'manual_name', 'manual_version']
+    readonly_fields = ['manual_name', 'manual_version', 'manual_date']
+    list_filter = ['manual', 'manual__manual_base', ItemsIncomingToVersionFilter]
+    date_hierarchy = 'manual__enable_date'
+    actions_on_bottom = True
 
 
 admin.site.register(Item, ItemAdmin)
+admin.site.register(ManualBase, ManualBaseAdmin)
 admin.site.register(Manual, ManualAdmin)
 admin.site.unregister(Group)
-
-# можно отключить, версии нельзя удалить пока есть элемент справочника
-# удаление самой версии только из справочника
-admin.site.register(ManualVersion, ManualVersionAdmin)

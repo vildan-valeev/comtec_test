@@ -1,11 +1,15 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
+from manual.api.v1.serializers import ManualSerializer
+from manual.models import Manual
+
 
 class ManualList(ListAPIView):
-    serializer_class = ...
+    queryset = Manual.objects.all()
+    serializer_class = ManualSerializer
 
-    def get_queryset(self):
-        pass
+    # def get_queryset(self):
+    #     pass
 
 
 class ManualInstanceDetail(RetrieveAPIView):

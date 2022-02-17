@@ -2,7 +2,7 @@ from typing import List, Tuple
 
 from django.contrib.admin import SimpleListFilter
 
-from manual.models import Item, ManualVersion
+from manual.models import Manual
 
 
 class ItemsIncomingToVersionFilter(SimpleListFilter):
@@ -21,11 +21,11 @@ class ItemsIncomingToVersionFilter(SimpleListFilter):
     def lookups(self, request, model_admin) -> List[Tuple]:
         """Список для list_filter"""
         qs = model_admin.get_queryset(request)  # список элементов
-        manuals_v = set([c.manual_version for c in qs])  # собираем массив из версий справочников
+        manuals = set([c.manual for c in qs])  # собираем массив из справочников
 
         # докидываем в массив строки-названия.
         # [(id, str), ..., ] - id - значение для фильтрации, str - для читабельности в виджете
-        return [(c.id, f'{c.id} - {c.manual} - {c.version}') for c in manuals_v]
+        return [(c.id, f'{c.id} - {c.manual_base.name} - {c.version}') for c in manuals]
 
     def queryset(self, request, queryset):
 
@@ -33,7 +33,7 @@ class ItemsIncomingToVersionFilter(SimpleListFilter):
             # очень мутная тема...
             # отфильтровываем все элементы - берем все даты, которые меньше или равно текущей даты версии справочника,
             # также отфильтровываем по принадлежности всех элементов к одному базовому справочнику
-            m_v_object = ManualVersion.objects.get(pk=self.value())
-            return queryset.filter(manual_version__enable_date__lte=m_v_object.enable_date,
-                                   manual_version__manual_id=m_v_object.manual.id)
+            m_object = Manual.objects.get(pk=self.value())
+            return queryset.filter(manual__enable_date__lte=m_object.enable_date,
+                                   manual__manual_base_id=m_object.manual_base.id)
         return queryset

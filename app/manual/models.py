@@ -1,10 +1,9 @@
-from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
 import uuid
 
 
-class Manual(models.Model):
+class ManualBase(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="Unique ID", editable=False)
     name = models.CharField(max_length=200)
     short_name = models.CharField(max_length=50)
@@ -12,40 +11,46 @@ class Manual(models.Model):
 
     class Meta:
         ordering = ['id', ]
-        verbose_name = 'Справочник'
-        verbose_name_plural = 'Справочники'
+        verbose_name = 'Базовый справочник'
+        verbose_name_plural = 'Базовые справочники'
 
     def __str__(self):
         return f'{self.name}'
 
 
-class ManualVersion(models.Model):
-    manual = models.ForeignKey(Manual, on_delete=models.PROTECT, )
+class Manual(models.Model):
+    manual_base = models.ForeignKey(ManualBase, on_delete=models.PROTECT,)
     version = models.CharField(max_length=50, null=False, blank=False)
     enable_date = models.DateTimeField(auto_now=False, auto_now_add=False, null=False, blank=False, verbose_name='Дата',
                                        help_text='дата начала действия справочника этой версии')
 
+    def name(self):
+        return self.manual_base.name
+
+    def short_name(self):
+        return self.manual_base.short_name
+
+    def description(self):
+        return self.manual_base.description
+
     class Meta:
         ordering = ['id', ]
-        verbose_name = 'Версию справочника'
-        verbose_name_plural = 'Версии справочников'
-        # constraints = [
-        #     models.UniqueConstraint(name="unique version", fields=['version'])
-        # ]
+        verbose_name = 'Cправочника'
+        verbose_name_plural = 'Cправочники'
 
     def __str__(self):
-        return f'{self.manual} - {self.version}'
+        return f'{self.manual_base} - {self.version}'
 
     def clean(self):
         """Проверка поля version"""
         print('Проверка')
 
-        if self.__class__.objects.filter(manual__id=self.manual.id, version=self.version).exclude(pk=self.pk).exists():
+        if self.__class__.objects.filter(manual_base__id=self.manual_base.id, version=self.version).exclude(pk=self.pk).exists():
             raise ValidationError(f'Версия "{self.version}" уже существует!')
 
 
 class Item(models.Model):
-    manual_version = models.ForeignKey(ManualVersion, on_delete=models.PROTECT)
+    manual = models.ForeignKey(Manual, on_delete=models.PROTECT)
     code = models.CharField(max_length=20)
     summary = models.TextField(max_length=1000, help_text="Description of the Manual")
 
@@ -57,14 +62,14 @@ class Item(models.Model):
     def __str__(self):
         return f'{self.id} | {self.code} | {self.summary}'
 
-    def manual(self):
+    def manual_name(self):
         """Вывод справочника элемента"""
-        return self.manual_version.manual
+        return self.manual.manual_base.name
 
-    def version(self):
+    def manual_version(self):
         """Вывод версии справочника элемента"""
-        return self.manual_version.version
+        return self.manual.version
 
-    def date(self):
+    def manual_date(self):
         """Вывод даты версии справочника элемента"""
-        return self.manual_version.enable_date
+        return self.manual.enable_date

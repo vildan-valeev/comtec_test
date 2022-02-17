@@ -20,7 +20,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
 
-    'manual.apps.ManualConfig'
+    'manual.apps.ManualConfig',
 ]
 
 MIDDLEWARE = [
@@ -103,8 +103,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
     ),
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 100,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',

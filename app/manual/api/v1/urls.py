@@ -1,11 +1,10 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 
-# from ma.api.views import ItemCreateList, ItemDetail
+from manual.api.v1.views import ManualList
 
 urlpatterns = [
+    path('manual/', ManualList.as_view()),
+    path('manual/current/<fds>', ManualList.as_view()),
     # path('item/', ItemCreateList.as_view()),
     # path('item/<int:pk>/', ItemDetail.as_view()),
-    # path('auth/', include('djoser.urls')),
-    # path('auth_token/', include('djoser.urls.authtoken')),
 ]
