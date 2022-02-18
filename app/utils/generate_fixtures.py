@@ -16,7 +16,7 @@ def gen_fixtures():
         mb_obj, created = ManualBase.objects.get_or_create(name=f'Справочник{m}', short_name=f'C{m}',
                                                            description=f'Random text {m}')
         for mv in range(1, 5):
-            m_obj, created = Manual.objects.get_or_create(manual_base=mb_obj, version=f'0.{mv}',
+            m_obj, created = Manual.objects.get_or_create(manual_base=mb_obj, version=f'00.{mv:02d}',
                                                           enable_date=get_random_datetime())
             for i in range(1, 12):
                 Item.objects.get_or_create(manual=m_obj, code=randint(100, 500),

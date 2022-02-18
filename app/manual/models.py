@@ -2,6 +2,8 @@ from django.core.exceptions import ValidationError
 from django.db import models
 import uuid
 
+from manual.serices.regex_check import ManualVersionCheck
+
 
 class ManualBase(models.Model):
     """
@@ -50,6 +52,9 @@ class Manual(models.Model):
     def clean(self):
         """Проверка поля version"""
         print('Проверка')
+        check = ManualVersionCheck()
+        if check.check_fullmatch(check.regex, self.version) is False:
+            raise ValidationError(f'Версия должны быть в формате от 00.01 до 99.99')
 
         if self.__class__.objects.filter(manual_base__id=self.manual_base.id, version=self.version).exclude(pk=self.pk).exists():
             raise ValidationError(f'Версия "{self.version}" уже существует!')

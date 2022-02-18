@@ -28,6 +28,6 @@ def near_int(lst, n) -> int:
             return s[i]
 
 
-near_int([12, 18, 3, 1, 8], 4)
-near_int([12, 18, 3, 1, 8], 3)
-near_int([12, 18, 3, 1, 8], 8)
+# near_int([12, 18, 3, 1, 8], 4)
+# near_int([12, 18, 3, 1, 8], 3)
+# near_int([12, 18, 3, 1, 8], 8)

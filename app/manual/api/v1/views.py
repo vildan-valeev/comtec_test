@@ -36,8 +36,10 @@ class ItemList(ListAPIView):
     def get_queryset(self, *args, **kwargs):
         """ """
         # по id базового справочника находим актуальный справочник - дату (до которой все элементы считаются актуальные)
-        date = near_date(self.kwargs['id'])
-        return Item.objects.filter(manual__manual_base_id=self.kwargs['id'], manual__enable_date__lte=date)
+        print(self.kwargs['id'])
+        # date = near_date(self.kwargs['id'])
+        return Item.objects.all()
+        # return Item.objects.filter(manual__manual_base_id=self.kwargs['id'], manual__enable_date__lte=date)
 
 
 class ItemListByVersion(ListAPIView):
