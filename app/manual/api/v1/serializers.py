@@ -27,6 +27,7 @@ class ManualListAsOfDateSerializer(ManualListSerializer):
 
 class ItemListSerializer(serializers.ModelSerializer):
     """Сериализатор Элемент справочника"""
+    manual = serializers.CharField(read_only=True, source="manual.manual_base.id")
 
     class Meta:
         model = Item
