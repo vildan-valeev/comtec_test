@@ -11,9 +11,8 @@ class BaseRegexp:
 
 
 class ManualVersionCheck(BaseRegexp):
-    regex = '(?:[0-9][0-9]).(?:[0-9][1-9])'
+    regex = '(?:[0-9][0-9])\.(?:[0-9][1-9])'
 
 
 class ManualDateCheck(BaseRegexp):
     regex = '(?:0[1-9]|[12][0-9]|3[01])-(?:0[1-9]|1[0-2])-(?:20[12345][0-9])'
-
