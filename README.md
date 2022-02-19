@@ -1,35 +1,35 @@
-# Settings backend
-Template for quick start project with Docker, Django, Dramatiq, Caddy, Gunicorn
+# Тестовове задание
+## ООО Комтек
 
-if idle is Pycharm, make "app" dir to SourceRoot 
+[Условия][/docs/test_comtec.md] 
 
-## local
+
+## Development
 ```sh
-$ docker run --name redis -p 6379:6379 -d redis
-$ python manage.py makemigrations
-$ python manage.py migrate
-$ python manage.py runserver
-$ python manage.py rundramatiq
+$ docker-compose up --build
 ```
+Данные для тестов генерируются не из команды, а из фикстур автоматом, юзера создавать не нужно.
+Для сброса данных необходимо использовать кастомную `./manage.py delete_data` и `./manage.py init_data`
+Либо воспользоваться стандартными (flush, createsuperuser ...)
 
-## dev
-```sh
-$ docker-compose -f docker-compose.dev.yml up -d --build
-```
+http://127.0.0.1:8000 - Admin Site
+http://127.0.0.1:8000/api/swagger/ - Api Doc
 
-## prod
-```sh
-$ docker-compose -f docker-compose.prod.yml up -d --build
-```
+login - admin
+password - 25658545
 
-## Enter to container
+## Other
+### Enter to container
 ```sh
 $ docker exec -it <id container or name> bash
 $ docker exec -it <id container or name> <command>
 ```
-## Database dump/load
+### Database dump/load
 ```sh
 $ python manage.py dumpdata --natural-foreign --natural-primary --exclude=contenttypes --exclude=auth.Permission --indent 4 > default_data.json
 
 $ python manage.py loaddata default_data.json
 ```
+
+## TODO:
+1. 
