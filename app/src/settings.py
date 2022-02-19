@@ -1,11 +1,15 @@
 from pathlib import Path
+from environs import Env
+
+env = Env()
+env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-dz=b(g=n@ssi@%7ab+la2e+_$m9e+o9zqcfcx-vcpycy^$kook'
+SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG", False)
 
 ALLOWED_HOSTS = []
 
@@ -127,3 +131,9 @@ CUSTOM_RESPONSES = [
     {'result': 'Нет элемента(ов) в справочнике'},
     {'result': 'Error'},
 ]
+
+# add silk, debug-toolbar
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')

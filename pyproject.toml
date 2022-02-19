@@ -10,7 +10,6 @@ Django = "^4.0.2"
 djangorestframework = "^3.13.1"
 drf-yasg = "^1.20.0"
 environs = "^9.5.0"
-django-split-settings = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 

@@ -1,0 +1,4870 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$rvqSvsbYjLPd7CqAAKZFbw$FHHTeO1hpuG7PFEvMx8XZliahGGM2bEk/+xNjV13xMs=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-02-19T12:47:35.139",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "2597ba99-1c1f-49cc-a001-c14350c73230",
+    "fields": {
+        "name": "Справочник7",
+        "short_name": "C7",
+        "description": "Random text 7"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "40cb4ee8-76a1-4179-8c36-51c5385a1238",
+    "fields": {
+        "name": "Справочник8",
+        "short_name": "C8",
+        "description": "Random text 8"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "4686be58-28c6-44b5-9bbf-40cf83a3742b",
+    "fields": {
+        "name": "Справочник11",
+        "short_name": "C11",
+        "description": "Random text 11"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "65c4cba3-15f7-4300-825d-31b028656631",
+    "fields": {
+        "name": "Справочник4",
+        "short_name": "C4",
+        "description": "Random text 4"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "6e6108ad-f5e0-44c0-bc60-93c7a1a8ba8f",
+    "fields": {
+        "name": "Справочник3",
+        "short_name": "C3",
+        "description": "Random text 3"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "b3f0b68f-b374-4dff-a8a9-45fcfcd06d01",
+    "fields": {
+        "name": "Справочник2",
+        "short_name": "C2",
+        "description": "Random text 2"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "b648fd21-edf1-4ac8-b341-4e2353de227d",
+    "fields": {
+        "name": "Справочник10",
+        "short_name": "C10",
+        "description": "Random text 10"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "c80cdae1-bc46-4353-8aa2-0f6e245ca5f5",
+    "fields": {
+        "name": "Справочник6",
+        "short_name": "C6",
+        "description": "Random text 6"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "d0e970f5-87fa-438e-8a04-8babec8ee632",
+    "fields": {
+        "name": "Справочник5",
+        "short_name": "C5",
+        "description": "Random text 5"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "e1a5bd24-3e5f-4a6e-869c-59480adc4f22",
+    "fields": {
+        "name": "Справочник9",
+        "short_name": "C9",
+        "description": "Random text 9"
+    }
+},
+{
+    "model": "manual.manualbase",
+    "pk": "f955c520-889c-4614-b096-96facc23f475",
+    "fields": {
+        "name": "Справочник1",
+        "short_name": "C1",
+        "description": "Random text 1"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 1,
+    "fields": {
+        "manual_base": "f955c520-889c-4614-b096-96facc23f475",
+        "version": "00.01",
+        "enable_date": "2022-01-21T00:55:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 2,
+    "fields": {
+        "manual_base": "f955c520-889c-4614-b096-96facc23f475",
+        "version": "00.02",
+        "enable_date": "2022-01-26T07:02:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 3,
+    "fields": {
+        "manual_base": "f955c520-889c-4614-b096-96facc23f475",
+        "version": "00.03",
+        "enable_date": "2022-01-27T00:19:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 4,
+    "fields": {
+        "manual_base": "f955c520-889c-4614-b096-96facc23f475",
+        "version": "00.04",
+        "enable_date": "2022-01-25T13:45:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 5,
+    "fields": {
+        "manual_base": "b3f0b68f-b374-4dff-a8a9-45fcfcd06d01",
+        "version": "00.01",
+        "enable_date": "2022-01-31T13:33:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 6,
+    "fields": {
+        "manual_base": "b3f0b68f-b374-4dff-a8a9-45fcfcd06d01",
+        "version": "00.02",
+        "enable_date": "2022-01-16T03:21:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 7,
+    "fields": {
+        "manual_base": "b3f0b68f-b374-4dff-a8a9-45fcfcd06d01",
+        "version": "00.03",
+        "enable_date": "2022-01-01T21:11:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 8,
+    "fields": {
+        "manual_base": "b3f0b68f-b374-4dff-a8a9-45fcfcd06d01",
+        "version": "00.04",
+        "enable_date": "2022-01-10T06:54:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 9,
+    "fields": {
+        "manual_base": "6e6108ad-f5e0-44c0-bc60-93c7a1a8ba8f",
+        "version": "00.01",
+        "enable_date": "2022-01-18T08:51:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 10,
+    "fields": {
+        "manual_base": "6e6108ad-f5e0-44c0-bc60-93c7a1a8ba8f",
+        "version": "00.02",
+        "enable_date": "2022-01-08T21:34:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 11,
+    "fields": {
+        "manual_base": "6e6108ad-f5e0-44c0-bc60-93c7a1a8ba8f",
+        "version": "00.03",
+        "enable_date": "2022-01-26T05:31:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 12,
+    "fields": {
+        "manual_base": "6e6108ad-f5e0-44c0-bc60-93c7a1a8ba8f",
+        "version": "00.04",
+        "enable_date": "2022-01-31T23:20:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 13,
+    "fields": {
+        "manual_base": "65c4cba3-15f7-4300-825d-31b028656631",
+        "version": "00.01",
+        "enable_date": "2022-01-07T17:02:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 14,
+    "fields": {
+        "manual_base": "65c4cba3-15f7-4300-825d-31b028656631",
+        "version": "00.02",
+        "enable_date": "2022-01-13T04:44:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 15,
+    "fields": {
+        "manual_base": "65c4cba3-15f7-4300-825d-31b028656631",
+        "version": "00.03",
+        "enable_date": "2022-01-27T08:10:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 16,
+    "fields": {
+        "manual_base": "65c4cba3-15f7-4300-825d-31b028656631",
+        "version": "00.04",
+        "enable_date": "2022-01-15T03:07:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 17,
+    "fields": {
+        "manual_base": "d0e970f5-87fa-438e-8a04-8babec8ee632",
+        "version": "00.01",
+        "enable_date": "2022-01-14T05:34:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 18,
+    "fields": {
+        "manual_base": "d0e970f5-87fa-438e-8a04-8babec8ee632",
+        "version": "00.02",
+        "enable_date": "2022-01-11T21:17:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 19,
+    "fields": {
+        "manual_base": "d0e970f5-87fa-438e-8a04-8babec8ee632",
+        "version": "00.03",
+        "enable_date": "2022-01-15T07:38:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 20,
+    "fields": {
+        "manual_base": "d0e970f5-87fa-438e-8a04-8babec8ee632",
+        "version": "00.04",
+        "enable_date": "2022-01-08T04:12:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 21,
+    "fields": {
+        "manual_base": "c80cdae1-bc46-4353-8aa2-0f6e245ca5f5",
+        "version": "00.01",
+        "enable_date": "2022-01-19T01:08:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 22,
+    "fields": {
+        "manual_base": "c80cdae1-bc46-4353-8aa2-0f6e245ca5f5",
+        "version": "00.02",
+        "enable_date": "2022-01-24T09:57:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 23,
+    "fields": {
+        "manual_base": "c80cdae1-bc46-4353-8aa2-0f6e245ca5f5",
+        "version": "00.03",
+        "enable_date": "2022-01-28T14:28:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 24,
+    "fields": {
+        "manual_base": "c80cdae1-bc46-4353-8aa2-0f6e245ca5f5",
+        "version": "00.04",
+        "enable_date": "2022-01-23T01:26:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 25,
+    "fields": {
+        "manual_base": "2597ba99-1c1f-49cc-a001-c14350c73230",
+        "version": "00.01",
+        "enable_date": "2022-01-02T09:22:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 26,
+    "fields": {
+        "manual_base": "2597ba99-1c1f-49cc-a001-c14350c73230",
+        "version": "00.02",
+        "enable_date": "2022-01-05T05:35:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 27,
+    "fields": {
+        "manual_base": "2597ba99-1c1f-49cc-a001-c14350c73230",
+        "version": "00.03",
+        "enable_date": "2022-01-14T16:53:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 28,
+    "fields": {
+        "manual_base": "2597ba99-1c1f-49cc-a001-c14350c73230",
+        "version": "00.04",
+        "enable_date": "2022-01-06T06:51:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 29,
+    "fields": {
+        "manual_base": "40cb4ee8-76a1-4179-8c36-51c5385a1238",
+        "version": "00.01",
+        "enable_date": "2022-01-07T08:20:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 30,
+    "fields": {
+        "manual_base": "40cb4ee8-76a1-4179-8c36-51c5385a1238",
+        "version": "00.02",
+        "enable_date": "2022-01-04T11:06:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 31,
+    "fields": {
+        "manual_base": "40cb4ee8-76a1-4179-8c36-51c5385a1238",
+        "version": "00.03",
+        "enable_date": "2022-01-28T13:26:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 32,
+    "fields": {
+        "manual_base": "40cb4ee8-76a1-4179-8c36-51c5385a1238",
+        "version": "00.04",
+        "enable_date": "2022-01-25T08:58:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 33,
+    "fields": {
+        "manual_base": "e1a5bd24-3e5f-4a6e-869c-59480adc4f22",
+        "version": "00.01",
+        "enable_date": "2022-01-22T22:31:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 34,
+    "fields": {
+        "manual_base": "e1a5bd24-3e5f-4a6e-869c-59480adc4f22",
+        "version": "00.02",
+        "enable_date": "2022-01-14T08:32:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 35,
+    "fields": {
+        "manual_base": "e1a5bd24-3e5f-4a6e-869c-59480adc4f22",
+        "version": "00.03",
+        "enable_date": "2022-01-04T17:24:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 36,
+    "fields": {
+        "manual_base": "e1a5bd24-3e5f-4a6e-869c-59480adc4f22",
+        "version": "00.04",
+        "enable_date": "2022-01-28T00:19:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 37,
+    "fields": {
+        "manual_base": "b648fd21-edf1-4ac8-b341-4e2353de227d",
+        "version": "00.01",
+        "enable_date": "2022-01-27T10:18:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 38,
+    "fields": {
+        "manual_base": "b648fd21-edf1-4ac8-b341-4e2353de227d",
+        "version": "00.02",
+        "enable_date": "2022-01-29T13:51:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 39,
+    "fields": {
+        "manual_base": "b648fd21-edf1-4ac8-b341-4e2353de227d",
+        "version": "00.03",
+        "enable_date": "2022-01-26T06:47:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 40,
+    "fields": {
+        "manual_base": "b648fd21-edf1-4ac8-b341-4e2353de227d",
+        "version": "00.04",
+        "enable_date": "2022-01-16T23:10:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 41,
+    "fields": {
+        "manual_base": "4686be58-28c6-44b5-9bbf-40cf83a3742b",
+        "version": "00.01",
+        "enable_date": "2022-01-25T18:52:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 42,
+    "fields": {
+        "manual_base": "4686be58-28c6-44b5-9bbf-40cf83a3742b",
+        "version": "00.02",
+        "enable_date": "2022-01-22T14:49:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 43,
+    "fields": {
+        "manual_base": "4686be58-28c6-44b5-9bbf-40cf83a3742b",
+        "version": "00.03",
+        "enable_date": "2022-01-29T00:40:00"
+    }
+},
+{
+    "model": "manual.manual",
+    "pk": 44,
+    "fields": {
+        "manual_base": "4686be58-28c6-44b5-9bbf-40cf83a3742b",
+        "version": "00.04",
+        "enable_date": "2022-01-18T14:02:00"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 1,
+    "fields": {
+        "manual": 1,
+        "code": "340",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 2,
+    "fields": {
+        "manual": 1,
+        "code": "463",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 3,
+    "fields": {
+        "manual": 1,
+        "code": "187",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 4,
+    "fields": {
+        "manual": 1,
+        "code": "167",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 5,
+    "fields": {
+        "manual": 1,
+        "code": "390",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 6,
+    "fields": {
+        "manual": 1,
+        "code": "397",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 7,
+    "fields": {
+        "manual": 1,
+        "code": "235",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 8,
+    "fields": {
+        "manual": 1,
+        "code": "313",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 9,
+    "fields": {
+        "manual": 1,
+        "code": "325",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 10,
+    "fields": {
+        "manual": 1,
+        "code": "157",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 11,
+    "fields": {
+        "manual": 1,
+        "code": "424",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 12,
+    "fields": {
+        "manual": 2,
+        "code": "167",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 13,
+    "fields": {
+        "manual": 2,
+        "code": "379",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 14,
+    "fields": {
+        "manual": 2,
+        "code": "473",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 15,
+    "fields": {
+        "manual": 2,
+        "code": "226",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 16,
+    "fields": {
+        "manual": 2,
+        "code": "397",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 17,
+    "fields": {
+        "manual": 2,
+        "code": "119",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 18,
+    "fields": {
+        "manual": 2,
+        "code": "482",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 19,
+    "fields": {
+        "manual": 2,
+        "code": "347",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 20,
+    "fields": {
+        "manual": 2,
+        "code": "243",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 21,
+    "fields": {
+        "manual": 2,
+        "code": "365",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 22,
+    "fields": {
+        "manual": 2,
+        "code": "378",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 23,
+    "fields": {
+        "manual": 3,
+        "code": "284",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 24,
+    "fields": {
+        "manual": 3,
+        "code": "105",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 25,
+    "fields": {
+        "manual": 3,
+        "code": "496",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 26,
+    "fields": {
+        "manual": 3,
+        "code": "162",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 27,
+    "fields": {
+        "manual": 3,
+        "code": "324",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 28,
+    "fields": {
+        "manual": 3,
+        "code": "493",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 29,
+    "fields": {
+        "manual": 3,
+        "code": "241",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 30,
+    "fields": {
+        "manual": 3,
+        "code": "450",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 31,
+    "fields": {
+        "manual": 3,
+        "code": "202",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 32,
+    "fields": {
+        "manual": 3,
+        "code": "128",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 33,
+    "fields": {
+        "manual": 3,
+        "code": "203",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 34,
+    "fields": {
+        "manual": 4,
+        "code": "209",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 35,
+    "fields": {
+        "manual": 4,
+        "code": "470",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 36,
+    "fields": {
+        "manual": 4,
+        "code": "494",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 37,
+    "fields": {
+        "manual": 4,
+        "code": "249",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 38,
+    "fields": {
+        "manual": 4,
+        "code": "472",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 39,
+    "fields": {
+        "manual": 4,
+        "code": "123",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 40,
+    "fields": {
+        "manual": 4,
+        "code": "454",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 41,
+    "fields": {
+        "manual": 4,
+        "code": "162",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 42,
+    "fields": {
+        "manual": 4,
+        "code": "173",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 43,
+    "fields": {
+        "manual": 4,
+        "code": "214",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 44,
+    "fields": {
+        "manual": 4,
+        "code": "299",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 45,
+    "fields": {
+        "manual": 5,
+        "code": "379",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 46,
+    "fields": {
+        "manual": 5,
+        "code": "257",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 47,
+    "fields": {
+        "manual": 5,
+        "code": "170",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 48,
+    "fields": {
+        "manual": 5,
+        "code": "497",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 49,
+    "fields": {
+        "manual": 5,
+        "code": "484",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 50,
+    "fields": {
+        "manual": 5,
+        "code": "321",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 51,
+    "fields": {
+        "manual": 5,
+        "code": "136",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 52,
+    "fields": {
+        "manual": 5,
+        "code": "190",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 53,
+    "fields": {
+        "manual": 5,
+        "code": "460",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 54,
+    "fields": {
+        "manual": 5,
+        "code": "118",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 55,
+    "fields": {
+        "manual": 5,
+        "code": "396",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 56,
+    "fields": {
+        "manual": 6,
+        "code": "282",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 57,
+    "fields": {
+        "manual": 6,
+        "code": "196",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 58,
+    "fields": {
+        "manual": 6,
+        "code": "204",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 59,
+    "fields": {
+        "manual": 6,
+        "code": "270",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 60,
+    "fields": {
+        "manual": 6,
+        "code": "251",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 61,
+    "fields": {
+        "manual": 6,
+        "code": "427",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 62,
+    "fields": {
+        "manual": 6,
+        "code": "411",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 63,
+    "fields": {
+        "manual": 6,
+        "code": "118",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 64,
+    "fields": {
+        "manual": 6,
+        "code": "105",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 65,
+    "fields": {
+        "manual": 6,
+        "code": "340",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 66,
+    "fields": {
+        "manual": 6,
+        "code": "236",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 67,
+    "fields": {
+        "manual": 7,
+        "code": "201",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 68,
+    "fields": {
+        "manual": 7,
+        "code": "400",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 69,
+    "fields": {
+        "manual": 7,
+        "code": "151",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 70,
+    "fields": {
+        "manual": 7,
+        "code": "440",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 71,
+    "fields": {
+        "manual": 7,
+        "code": "154",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 72,
+    "fields": {
+        "manual": 7,
+        "code": "440",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 73,
+    "fields": {
+        "manual": 7,
+        "code": "301",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 74,
+    "fields": {
+        "manual": 7,
+        "code": "384",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 75,
+    "fields": {
+        "manual": 7,
+        "code": "316",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 76,
+    "fields": {
+        "manual": 7,
+        "code": "444",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 77,
+    "fields": {
+        "manual": 7,
+        "code": "305",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 78,
+    "fields": {
+        "manual": 8,
+        "code": "289",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 79,
+    "fields": {
+        "manual": 8,
+        "code": "175",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 80,
+    "fields": {
+        "manual": 8,
+        "code": "324",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 81,
+    "fields": {
+        "manual": 8,
+        "code": "260",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 82,
+    "fields": {
+        "manual": 8,
+        "code": "267",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 83,
+    "fields": {
+        "manual": 8,
+        "code": "104",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 84,
+    "fields": {
+        "manual": 8,
+        "code": "420",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 85,
+    "fields": {
+        "manual": 8,
+        "code": "376",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 86,
+    "fields": {
+        "manual": 8,
+        "code": "200",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 87,
+    "fields": {
+        "manual": 8,
+        "code": "468",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 88,
+    "fields": {
+        "manual": 8,
+        "code": "408",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 89,
+    "fields": {
+        "manual": 9,
+        "code": "164",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 90,
+    "fields": {
+        "manual": 9,
+        "code": "270",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 91,
+    "fields": {
+        "manual": 9,
+        "code": "427",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 92,
+    "fields": {
+        "manual": 9,
+        "code": "299",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 93,
+    "fields": {
+        "manual": 9,
+        "code": "228",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 94,
+    "fields": {
+        "manual": 9,
+        "code": "346",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 95,
+    "fields": {
+        "manual": 9,
+        "code": "489",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 96,
+    "fields": {
+        "manual": 9,
+        "code": "254",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 97,
+    "fields": {
+        "manual": 9,
+        "code": "473",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 98,
+    "fields": {
+        "manual": 9,
+        "code": "305",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 99,
+    "fields": {
+        "manual": 9,
+        "code": "309",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 100,
+    "fields": {
+        "manual": 10,
+        "code": "414",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 101,
+    "fields": {
+        "manual": 10,
+        "code": "198",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 102,
+    "fields": {
+        "manual": 10,
+        "code": "362",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 103,
+    "fields": {
+        "manual": 10,
+        "code": "100",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 104,
+    "fields": {
+        "manual": 10,
+        "code": "140",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 105,
+    "fields": {
+        "manual": 10,
+        "code": "207",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 106,
+    "fields": {
+        "manual": 10,
+        "code": "176",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 107,
+    "fields": {
+        "manual": 10,
+        "code": "167",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 108,
+    "fields": {
+        "manual": 10,
+        "code": "457",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 109,
+    "fields": {
+        "manual": 10,
+        "code": "400",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 110,
+    "fields": {
+        "manual": 10,
+        "code": "114",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 111,
+    "fields": {
+        "manual": 11,
+        "code": "192",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 112,
+    "fields": {
+        "manual": 11,
+        "code": "226",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 113,
+    "fields": {
+        "manual": 11,
+        "code": "105",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 114,
+    "fields": {
+        "manual": 11,
+        "code": "429",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 115,
+    "fields": {
+        "manual": 11,
+        "code": "431",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 116,
+    "fields": {
+        "manual": 11,
+        "code": "229",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 117,
+    "fields": {
+        "manual": 11,
+        "code": "169",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 118,
+    "fields": {
+        "manual": 11,
+        "code": "196",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 119,
+    "fields": {
+        "manual": 11,
+        "code": "152",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 120,
+    "fields": {
+        "manual": 11,
+        "code": "285",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 121,
+    "fields": {
+        "manual": 11,
+        "code": "229",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 122,
+    "fields": {
+        "manual": 12,
+        "code": "391",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 123,
+    "fields": {
+        "manual": 12,
+        "code": "301",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 124,
+    "fields": {
+        "manual": 12,
+        "code": "205",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 125,
+    "fields": {
+        "manual": 12,
+        "code": "135",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 126,
+    "fields": {
+        "manual": 12,
+        "code": "260",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 127,
+    "fields": {
+        "manual": 12,
+        "code": "291",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 128,
+    "fields": {
+        "manual": 12,
+        "code": "197",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 129,
+    "fields": {
+        "manual": 12,
+        "code": "312",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 130,
+    "fields": {
+        "manual": 12,
+        "code": "454",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 131,
+    "fields": {
+        "manual": 12,
+        "code": "172",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 132,
+    "fields": {
+        "manual": 12,
+        "code": "273",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 133,
+    "fields": {
+        "manual": 13,
+        "code": "320",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 134,
+    "fields": {
+        "manual": 13,
+        "code": "217",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 135,
+    "fields": {
+        "manual": 13,
+        "code": "436",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 136,
+    "fields": {
+        "manual": 13,
+        "code": "319",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 137,
+    "fields": {
+        "manual": 13,
+        "code": "217",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 138,
+    "fields": {
+        "manual": 13,
+        "code": "397",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 139,
+    "fields": {
+        "manual": 13,
+        "code": "253",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 140,
+    "fields": {
+        "manual": 13,
+        "code": "145",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 141,
+    "fields": {
+        "manual": 13,
+        "code": "261",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 142,
+    "fields": {
+        "manual": 13,
+        "code": "196",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 143,
+    "fields": {
+        "manual": 13,
+        "code": "166",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 144,
+    "fields": {
+        "manual": 14,
+        "code": "423",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 145,
+    "fields": {
+        "manual": 14,
+        "code": "227",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 146,
+    "fields": {
+        "manual": 14,
+        "code": "420",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 147,
+    "fields": {
+        "manual": 14,
+        "code": "186",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 148,
+    "fields": {
+        "manual": 14,
+        "code": "344",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 149,
+    "fields": {
+        "manual": 14,
+        "code": "474",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 150,
+    "fields": {
+        "manual": 14,
+        "code": "102",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 151,
+    "fields": {
+        "manual": 14,
+        "code": "342",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 152,
+    "fields": {
+        "manual": 14,
+        "code": "300",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 153,
+    "fields": {
+        "manual": 14,
+        "code": "393",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 154,
+    "fields": {
+        "manual": 14,
+        "code": "482",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 155,
+    "fields": {
+        "manual": 15,
+        "code": "200",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 156,
+    "fields": {
+        "manual": 15,
+        "code": "275",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 157,
+    "fields": {
+        "manual": 15,
+        "code": "422",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 158,
+    "fields": {
+        "manual": 15,
+        "code": "240",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 159,
+    "fields": {
+        "manual": 15,
+        "code": "358",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 160,
+    "fields": {
+        "manual": 15,
+        "code": "343",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 161,
+    "fields": {
+        "manual": 15,
+        "code": "461",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 162,
+    "fields": {
+        "manual": 15,
+        "code": "431",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 163,
+    "fields": {
+        "manual": 15,
+        "code": "340",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 164,
+    "fields": {
+        "manual": 15,
+        "code": "311",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 165,
+    "fields": {
+        "manual": 15,
+        "code": "309",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 166,
+    "fields": {
+        "manual": 16,
+        "code": "485",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 167,
+    "fields": {
+        "manual": 16,
+        "code": "462",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 168,
+    "fields": {
+        "manual": 16,
+        "code": "450",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 169,
+    "fields": {
+        "manual": 16,
+        "code": "485",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 170,
+    "fields": {
+        "manual": 16,
+        "code": "449",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 171,
+    "fields": {
+        "manual": 16,
+        "code": "463",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 172,
+    "fields": {
+        "manual": 16,
+        "code": "372",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 173,
+    "fields": {
+        "manual": 16,
+        "code": "231",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 174,
+    "fields": {
+        "manual": 16,
+        "code": "492",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 175,
+    "fields": {
+        "manual": 16,
+        "code": "478",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 176,
+    "fields": {
+        "manual": 16,
+        "code": "320",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 177,
+    "fields": {
+        "manual": 17,
+        "code": "443",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 178,
+    "fields": {
+        "manual": 17,
+        "code": "109",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 179,
+    "fields": {
+        "manual": 17,
+        "code": "389",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 180,
+    "fields": {
+        "manual": 17,
+        "code": "498",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 181,
+    "fields": {
+        "manual": 17,
+        "code": "129",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 182,
+    "fields": {
+        "manual": 17,
+        "code": "260",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 183,
+    "fields": {
+        "manual": 17,
+        "code": "194",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 184,
+    "fields": {
+        "manual": 17,
+        "code": "368",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 185,
+    "fields": {
+        "manual": 17,
+        "code": "123",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 186,
+    "fields": {
+        "manual": 17,
+        "code": "240",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 187,
+    "fields": {
+        "manual": 17,
+        "code": "497",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 188,
+    "fields": {
+        "manual": 18,
+        "code": "367",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 189,
+    "fields": {
+        "manual": 18,
+        "code": "258",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 190,
+    "fields": {
+        "manual": 18,
+        "code": "396",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 191,
+    "fields": {
+        "manual": 18,
+        "code": "400",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 192,
+    "fields": {
+        "manual": 18,
+        "code": "379",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 193,
+    "fields": {
+        "manual": 18,
+        "code": "125",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 194,
+    "fields": {
+        "manual": 18,
+        "code": "328",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 195,
+    "fields": {
+        "manual": 18,
+        "code": "366",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 196,
+    "fields": {
+        "manual": 18,
+        "code": "351",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 197,
+    "fields": {
+        "manual": 18,
+        "code": "428",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 198,
+    "fields": {
+        "manual": 18,
+        "code": "170",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 199,
+    "fields": {
+        "manual": 19,
+        "code": "461",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 200,
+    "fields": {
+        "manual": 19,
+        "code": "379",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 201,
+    "fields": {
+        "manual": 19,
+        "code": "318",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 202,
+    "fields": {
+        "manual": 19,
+        "code": "312",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 203,
+    "fields": {
+        "manual": 19,
+        "code": "384",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 204,
+    "fields": {
+        "manual": 19,
+        "code": "108",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 205,
+    "fields": {
+        "manual": 19,
+        "code": "471",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 206,
+    "fields": {
+        "manual": 19,
+        "code": "177",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 207,
+    "fields": {
+        "manual": 19,
+        "code": "386",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 208,
+    "fields": {
+        "manual": 19,
+        "code": "275",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 209,
+    "fields": {
+        "manual": 19,
+        "code": "147",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 210,
+    "fields": {
+        "manual": 20,
+        "code": "467",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 211,
+    "fields": {
+        "manual": 20,
+        "code": "392",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 212,
+    "fields": {
+        "manual": 20,
+        "code": "235",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 213,
+    "fields": {
+        "manual": 20,
+        "code": "325",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 214,
+    "fields": {
+        "manual": 20,
+        "code": "151",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 215,
+    "fields": {
+        "manual": 20,
+        "code": "306",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 216,
+    "fields": {
+        "manual": 20,
+        "code": "106",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 217,
+    "fields": {
+        "manual": 20,
+        "code": "306",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 218,
+    "fields": {
+        "manual": 20,
+        "code": "423",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 219,
+    "fields": {
+        "manual": 20,
+        "code": "321",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 220,
+    "fields": {
+        "manual": 20,
+        "code": "169",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 221,
+    "fields": {
+        "manual": 21,
+        "code": "129",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 222,
+    "fields": {
+        "manual": 21,
+        "code": "314",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 223,
+    "fields": {
+        "manual": 21,
+        "code": "303",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 224,
+    "fields": {
+        "manual": 21,
+        "code": "311",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 225,
+    "fields": {
+        "manual": 21,
+        "code": "403",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 226,
+    "fields": {
+        "manual": 21,
+        "code": "243",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 227,
+    "fields": {
+        "manual": 21,
+        "code": "197",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 228,
+    "fields": {
+        "manual": 21,
+        "code": "369",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 229,
+    "fields": {
+        "manual": 21,
+        "code": "124",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 230,
+    "fields": {
+        "manual": 21,
+        "code": "375",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 231,
+    "fields": {
+        "manual": 21,
+        "code": "204",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 232,
+    "fields": {
+        "manual": 22,
+        "code": "258",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 233,
+    "fields": {
+        "manual": 22,
+        "code": "250",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 234,
+    "fields": {
+        "manual": 22,
+        "code": "154",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 235,
+    "fields": {
+        "manual": 22,
+        "code": "372",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 236,
+    "fields": {
+        "manual": 22,
+        "code": "150",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 237,
+    "fields": {
+        "manual": 22,
+        "code": "435",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 238,
+    "fields": {
+        "manual": 22,
+        "code": "288",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 239,
+    "fields": {
+        "manual": 22,
+        "code": "203",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 240,
+    "fields": {
+        "manual": 22,
+        "code": "150",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 241,
+    "fields": {
+        "manual": 22,
+        "code": "102",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 242,
+    "fields": {
+        "manual": 22,
+        "code": "416",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 243,
+    "fields": {
+        "manual": 23,
+        "code": "395",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 244,
+    "fields": {
+        "manual": 23,
+        "code": "154",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 245,
+    "fields": {
+        "manual": 23,
+        "code": "250",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 246,
+    "fields": {
+        "manual": 23,
+        "code": "198",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 247,
+    "fields": {
+        "manual": 23,
+        "code": "331",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 248,
+    "fields": {
+        "manual": 23,
+        "code": "103",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 249,
+    "fields": {
+        "manual": 23,
+        "code": "465",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 250,
+    "fields": {
+        "manual": 23,
+        "code": "142",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 251,
+    "fields": {
+        "manual": 23,
+        "code": "142",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 252,
+    "fields": {
+        "manual": 23,
+        "code": "164",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 253,
+    "fields": {
+        "manual": 23,
+        "code": "457",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 254,
+    "fields": {
+        "manual": 24,
+        "code": "362",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 255,
+    "fields": {
+        "manual": 24,
+        "code": "499",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 256,
+    "fields": {
+        "manual": 24,
+        "code": "410",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 257,
+    "fields": {
+        "manual": 24,
+        "code": "221",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 258,
+    "fields": {
+        "manual": 24,
+        "code": "379",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 259,
+    "fields": {
+        "manual": 24,
+        "code": "305",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 260,
+    "fields": {
+        "manual": 24,
+        "code": "466",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 261,
+    "fields": {
+        "manual": 24,
+        "code": "441",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 262,
+    "fields": {
+        "manual": 24,
+        "code": "258",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 263,
+    "fields": {
+        "manual": 24,
+        "code": "384",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 264,
+    "fields": {
+        "manual": 24,
+        "code": "186",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 265,
+    "fields": {
+        "manual": 25,
+        "code": "471",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 266,
+    "fields": {
+        "manual": 25,
+        "code": "135",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 267,
+    "fields": {
+        "manual": 25,
+        "code": "453",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 268,
+    "fields": {
+        "manual": 25,
+        "code": "385",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 269,
+    "fields": {
+        "manual": 25,
+        "code": "156",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 270,
+    "fields": {
+        "manual": 25,
+        "code": "400",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 271,
+    "fields": {
+        "manual": 25,
+        "code": "146",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 272,
+    "fields": {
+        "manual": 25,
+        "code": "304",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 273,
+    "fields": {
+        "manual": 25,
+        "code": "169",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 274,
+    "fields": {
+        "manual": 25,
+        "code": "260",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 275,
+    "fields": {
+        "manual": 25,
+        "code": "402",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 276,
+    "fields": {
+        "manual": 26,
+        "code": "195",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 277,
+    "fields": {
+        "manual": 26,
+        "code": "292",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 278,
+    "fields": {
+        "manual": 26,
+        "code": "338",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 279,
+    "fields": {
+        "manual": 26,
+        "code": "368",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 280,
+    "fields": {
+        "manual": 26,
+        "code": "366",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 281,
+    "fields": {
+        "manual": 26,
+        "code": "348",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 282,
+    "fields": {
+        "manual": 26,
+        "code": "396",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 283,
+    "fields": {
+        "manual": 26,
+        "code": "463",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 284,
+    "fields": {
+        "manual": 26,
+        "code": "434",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 285,
+    "fields": {
+        "manual": 26,
+        "code": "213",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 286,
+    "fields": {
+        "manual": 26,
+        "code": "481",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 287,
+    "fields": {
+        "manual": 27,
+        "code": "356",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 288,
+    "fields": {
+        "manual": 27,
+        "code": "290",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 289,
+    "fields": {
+        "manual": 27,
+        "code": "457",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 290,
+    "fields": {
+        "manual": 27,
+        "code": "495",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 291,
+    "fields": {
+        "manual": 27,
+        "code": "147",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 292,
+    "fields": {
+        "manual": 27,
+        "code": "263",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 293,
+    "fields": {
+        "manual": 27,
+        "code": "182",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 294,
+    "fields": {
+        "manual": 27,
+        "code": "395",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 295,
+    "fields": {
+        "manual": 27,
+        "code": "272",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 296,
+    "fields": {
+        "manual": 27,
+        "code": "186",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 297,
+    "fields": {
+        "manual": 27,
+        "code": "307",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 298,
+    "fields": {
+        "manual": 28,
+        "code": "255",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 299,
+    "fields": {
+        "manual": 28,
+        "code": "350",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 300,
+    "fields": {
+        "manual": 28,
+        "code": "398",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 301,
+    "fields": {
+        "manual": 28,
+        "code": "193",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 302,
+    "fields": {
+        "manual": 28,
+        "code": "339",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 303,
+    "fields": {
+        "manual": 28,
+        "code": "112",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 304,
+    "fields": {
+        "manual": 28,
+        "code": "498",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 305,
+    "fields": {
+        "manual": 28,
+        "code": "415",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 306,
+    "fields": {
+        "manual": 28,
+        "code": "306",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 307,
+    "fields": {
+        "manual": 28,
+        "code": "211",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 308,
+    "fields": {
+        "manual": 28,
+        "code": "274",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 309,
+    "fields": {
+        "manual": 29,
+        "code": "130",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 310,
+    "fields": {
+        "manual": 29,
+        "code": "227",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 311,
+    "fields": {
+        "manual": 29,
+        "code": "496",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 312,
+    "fields": {
+        "manual": 29,
+        "code": "388",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 313,
+    "fields": {
+        "manual": 29,
+        "code": "399",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 314,
+    "fields": {
+        "manual": 29,
+        "code": "487",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 315,
+    "fields": {
+        "manual": 29,
+        "code": "261",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 316,
+    "fields": {
+        "manual": 29,
+        "code": "222",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 317,
+    "fields": {
+        "manual": 29,
+        "code": "462",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 318,
+    "fields": {
+        "manual": 29,
+        "code": "140",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 319,
+    "fields": {
+        "manual": 29,
+        "code": "185",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 320,
+    "fields": {
+        "manual": 30,
+        "code": "189",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 321,
+    "fields": {
+        "manual": 30,
+        "code": "117",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 322,
+    "fields": {
+        "manual": 30,
+        "code": "202",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 323,
+    "fields": {
+        "manual": 30,
+        "code": "428",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 324,
+    "fields": {
+        "manual": 30,
+        "code": "183",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 325,
+    "fields": {
+        "manual": 30,
+        "code": "400",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 326,
+    "fields": {
+        "manual": 30,
+        "code": "218",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 327,
+    "fields": {
+        "manual": 30,
+        "code": "107",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 328,
+    "fields": {
+        "manual": 30,
+        "code": "109",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 329,
+    "fields": {
+        "manual": 30,
+        "code": "380",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 330,
+    "fields": {
+        "manual": 30,
+        "code": "356",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 331,
+    "fields": {
+        "manual": 31,
+        "code": "381",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 332,
+    "fields": {
+        "manual": 31,
+        "code": "387",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 333,
+    "fields": {
+        "manual": 31,
+        "code": "260",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 334,
+    "fields": {
+        "manual": 31,
+        "code": "383",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 335,
+    "fields": {
+        "manual": 31,
+        "code": "399",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 336,
+    "fields": {
+        "manual": 31,
+        "code": "393",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 337,
+    "fields": {
+        "manual": 31,
+        "code": "262",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 338,
+    "fields": {
+        "manual": 31,
+        "code": "367",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 339,
+    "fields": {
+        "manual": 31,
+        "code": "321",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 340,
+    "fields": {
+        "manual": 31,
+        "code": "369",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 341,
+    "fields": {
+        "manual": 31,
+        "code": "156",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 342,
+    "fields": {
+        "manual": 32,
+        "code": "104",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 343,
+    "fields": {
+        "manual": 32,
+        "code": "213",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 344,
+    "fields": {
+        "manual": 32,
+        "code": "330",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 345,
+    "fields": {
+        "manual": 32,
+        "code": "337",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 346,
+    "fields": {
+        "manual": 32,
+        "code": "316",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 347,
+    "fields": {
+        "manual": 32,
+        "code": "412",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 348,
+    "fields": {
+        "manual": 32,
+        "code": "378",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 349,
+    "fields": {
+        "manual": 32,
+        "code": "107",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 350,
+    "fields": {
+        "manual": 32,
+        "code": "115",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 351,
+    "fields": {
+        "manual": 32,
+        "code": "234",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 352,
+    "fields": {
+        "manual": 32,
+        "code": "124",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 353,
+    "fields": {
+        "manual": 33,
+        "code": "432",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 354,
+    "fields": {
+        "manual": 33,
+        "code": "279",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 355,
+    "fields": {
+        "manual": 33,
+        "code": "293",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 356,
+    "fields": {
+        "manual": 33,
+        "code": "171",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 357,
+    "fields": {
+        "manual": 33,
+        "code": "424",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 358,
+    "fields": {
+        "manual": 33,
+        "code": "266",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 359,
+    "fields": {
+        "manual": 33,
+        "code": "161",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 360,
+    "fields": {
+        "manual": 33,
+        "code": "450",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 361,
+    "fields": {
+        "manual": 33,
+        "code": "194",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 362,
+    "fields": {
+        "manual": 33,
+        "code": "408",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 363,
+    "fields": {
+        "manual": 33,
+        "code": "164",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 364,
+    "fields": {
+        "manual": 34,
+        "code": "284",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 365,
+    "fields": {
+        "manual": 34,
+        "code": "103",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 366,
+    "fields": {
+        "manual": 34,
+        "code": "426",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 367,
+    "fields": {
+        "manual": 34,
+        "code": "159",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 368,
+    "fields": {
+        "manual": 34,
+        "code": "364",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 369,
+    "fields": {
+        "manual": 34,
+        "code": "184",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 370,
+    "fields": {
+        "manual": 34,
+        "code": "274",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 371,
+    "fields": {
+        "manual": 34,
+        "code": "251",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 372,
+    "fields": {
+        "manual": 34,
+        "code": "103",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 373,
+    "fields": {
+        "manual": 34,
+        "code": "183",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 374,
+    "fields": {
+        "manual": 34,
+        "code": "382",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 375,
+    "fields": {
+        "manual": 35,
+        "code": "116",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 376,
+    "fields": {
+        "manual": 35,
+        "code": "487",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 377,
+    "fields": {
+        "manual": 35,
+        "code": "129",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 378,
+    "fields": {
+        "manual": 35,
+        "code": "264",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 379,
+    "fields": {
+        "manual": 35,
+        "code": "442",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 380,
+    "fields": {
+        "manual": 35,
+        "code": "167",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 381,
+    "fields": {
+        "manual": 35,
+        "code": "366",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 382,
+    "fields": {
+        "manual": 35,
+        "code": "163",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 383,
+    "fields": {
+        "manual": 35,
+        "code": "138",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 384,
+    "fields": {
+        "manual": 35,
+        "code": "442",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 385,
+    "fields": {
+        "manual": 35,
+        "code": "339",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 386,
+    "fields": {
+        "manual": 36,
+        "code": "136",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 387,
+    "fields": {
+        "manual": 36,
+        "code": "451",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 388,
+    "fields": {
+        "manual": 36,
+        "code": "385",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 389,
+    "fields": {
+        "manual": 36,
+        "code": "216",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 390,
+    "fields": {
+        "manual": 36,
+        "code": "358",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 391,
+    "fields": {
+        "manual": 36,
+        "code": "295",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 392,
+    "fields": {
+        "manual": 36,
+        "code": "459",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 393,
+    "fields": {
+        "manual": 36,
+        "code": "455",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 394,
+    "fields": {
+        "manual": 36,
+        "code": "236",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 395,
+    "fields": {
+        "manual": 36,
+        "code": "254",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 396,
+    "fields": {
+        "manual": 36,
+        "code": "243",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 397,
+    "fields": {
+        "manual": 37,
+        "code": "278",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 398,
+    "fields": {
+        "manual": 37,
+        "code": "343",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 399,
+    "fields": {
+        "manual": 37,
+        "code": "207",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 400,
+    "fields": {
+        "manual": 37,
+        "code": "423",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 401,
+    "fields": {
+        "manual": 37,
+        "code": "271",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 402,
+    "fields": {
+        "manual": 37,
+        "code": "394",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 403,
+    "fields": {
+        "manual": 37,
+        "code": "299",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 404,
+    "fields": {
+        "manual": 37,
+        "code": "425",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 405,
+    "fields": {
+        "manual": 37,
+        "code": "147",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 406,
+    "fields": {
+        "manual": 37,
+        "code": "477",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 407,
+    "fields": {
+        "manual": 37,
+        "code": "336",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 408,
+    "fields": {
+        "manual": 38,
+        "code": "258",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 409,
+    "fields": {
+        "manual": 38,
+        "code": "223",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 410,
+    "fields": {
+        "manual": 38,
+        "code": "249",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 411,
+    "fields": {
+        "manual": 38,
+        "code": "112",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 412,
+    "fields": {
+        "manual": 38,
+        "code": "124",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 413,
+    "fields": {
+        "manual": 38,
+        "code": "384",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 414,
+    "fields": {
+        "manual": 38,
+        "code": "103",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 415,
+    "fields": {
+        "manual": 38,
+        "code": "251",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 416,
+    "fields": {
+        "manual": 38,
+        "code": "347",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 417,
+    "fields": {
+        "manual": 38,
+        "code": "139",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 418,
+    "fields": {
+        "manual": 38,
+        "code": "441",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 419,
+    "fields": {
+        "manual": 39,
+        "code": "486",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 420,
+    "fields": {
+        "manual": 39,
+        "code": "195",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 421,
+    "fields": {
+        "manual": 39,
+        "code": "338",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 422,
+    "fields": {
+        "manual": 39,
+        "code": "263",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 423,
+    "fields": {
+        "manual": 39,
+        "code": "326",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 424,
+    "fields": {
+        "manual": 39,
+        "code": "336",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 425,
+    "fields": {
+        "manual": 39,
+        "code": "296",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 426,
+    "fields": {
+        "manual": 39,
+        "code": "361",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 427,
+    "fields": {
+        "manual": 39,
+        "code": "383",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 428,
+    "fields": {
+        "manual": 39,
+        "code": "351",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 429,
+    "fields": {
+        "manual": 39,
+        "code": "248",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 430,
+    "fields": {
+        "manual": 40,
+        "code": "361",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 431,
+    "fields": {
+        "manual": 40,
+        "code": "338",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 432,
+    "fields": {
+        "manual": 40,
+        "code": "284",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 433,
+    "fields": {
+        "manual": 40,
+        "code": "172",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 434,
+    "fields": {
+        "manual": 40,
+        "code": "100",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 435,
+    "fields": {
+        "manual": 40,
+        "code": "292",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 436,
+    "fields": {
+        "manual": 40,
+        "code": "180",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 437,
+    "fields": {
+        "manual": 40,
+        "code": "133",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 438,
+    "fields": {
+        "manual": 40,
+        "code": "380",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 439,
+    "fields": {
+        "manual": 40,
+        "code": "395",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 440,
+    "fields": {
+        "manual": 40,
+        "code": "250",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 441,
+    "fields": {
+        "manual": 41,
+        "code": "358",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 442,
+    "fields": {
+        "manual": 41,
+        "code": "172",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 443,
+    "fields": {
+        "manual": 41,
+        "code": "406",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 444,
+    "fields": {
+        "manual": 41,
+        "code": "358",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 445,
+    "fields": {
+        "manual": 41,
+        "code": "242",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 446,
+    "fields": {
+        "manual": 41,
+        "code": "191",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 447,
+    "fields": {
+        "manual": 41,
+        "code": "194",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 448,
+    "fields": {
+        "manual": 41,
+        "code": "347",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 449,
+    "fields": {
+        "manual": 41,
+        "code": "320",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 450,
+    "fields": {
+        "manual": 41,
+        "code": "190",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 451,
+    "fields": {
+        "manual": 41,
+        "code": "183",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 452,
+    "fields": {
+        "manual": 42,
+        "code": "456",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 453,
+    "fields": {
+        "manual": 42,
+        "code": "288",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 454,
+    "fields": {
+        "manual": 42,
+        "code": "200",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 455,
+    "fields": {
+        "manual": 42,
+        "code": "243",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 456,
+    "fields": {
+        "manual": 42,
+        "code": "386",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 457,
+    "fields": {
+        "manual": 42,
+        "code": "163",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 458,
+    "fields": {
+        "manual": 42,
+        "code": "430",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 459,
+    "fields": {
+        "manual": 42,
+        "code": "240",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 460,
+    "fields": {
+        "manual": 42,
+        "code": "181",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 461,
+    "fields": {
+        "manual": 42,
+        "code": "329",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 462,
+    "fields": {
+        "manual": 42,
+        "code": "153",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 463,
+    "fields": {
+        "manual": 43,
+        "code": "379",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 464,
+    "fields": {
+        "manual": 43,
+        "code": "293",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 465,
+    "fields": {
+        "manual": 43,
+        "code": "409",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 466,
+    "fields": {
+        "manual": 43,
+        "code": "442",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 467,
+    "fields": {
+        "manual": 43,
+        "code": "247",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 468,
+    "fields": {
+        "manual": 43,
+        "code": "442",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 469,
+    "fields": {
+        "manual": 43,
+        "code": "289",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 470,
+    "fields": {
+        "manual": 43,
+        "code": "307",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 471,
+    "fields": {
+        "manual": 43,
+        "code": "213",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 472,
+    "fields": {
+        "manual": 43,
+        "code": "471",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 473,
+    "fields": {
+        "manual": 43,
+        "code": "309",
+        "summary": "Summary text 11"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 474,
+    "fields": {
+        "manual": 44,
+        "code": "456",
+        "summary": "Summary text 1"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 475,
+    "fields": {
+        "manual": 44,
+        "code": "197",
+        "summary": "Summary text 2"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 476,
+    "fields": {
+        "manual": 44,
+        "code": "283",
+        "summary": "Summary text 3"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 477,
+    "fields": {
+        "manual": 44,
+        "code": "414",
+        "summary": "Summary text 4"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 478,
+    "fields": {
+        "manual": 44,
+        "code": "319",
+        "summary": "Summary text 5"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 479,
+    "fields": {
+        "manual": 44,
+        "code": "367",
+        "summary": "Summary text 6"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 480,
+    "fields": {
+        "manual": 44,
+        "code": "444",
+        "summary": "Summary text 7"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 481,
+    "fields": {
+        "manual": 44,
+        "code": "376",
+        "summary": "Summary text 8"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 482,
+    "fields": {
+        "manual": 44,
+        "code": "449",
+        "summary": "Summary text 9"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 483,
+    "fields": {
+        "manual": 44,
+        "code": "331",
+        "summary": "Summary text 10"
+    }
+},
+{
+    "model": "manual.item",
+    "pk": 484,
+    "fields": {
+        "manual": 44,
+        "code": "235",
+        "summary": "Summary text 11"
+    }
+}
+]
