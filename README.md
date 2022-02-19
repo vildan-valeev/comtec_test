@@ -15,7 +15,7 @@ $ docker exec -it app poetry run python manage.py loaddata default_data.json
 Для сброса данных необходимо использовать кастомную команду `./manage.py delete_data` и `./manage.py init_data` - юзер не удаляется, только записи трех моделей
 Либо воспользоваться стандартными (flush, createsuperuser ...)
 
-http://0.0.0.0:8000 - Admin Site
+http://0.0.0.0:8000 - Admin Site <br>
 http://0.0.0.0:8000/api/swagger/ - Api Swagger Doc 
 
 login - admin
@@ -37,5 +37,6 @@ $ python manage.py loaddata default_data.json
 ## TODO:
 1. добавить django-split-settings - разделить settings на файлы, добавить файл с локальными настройками, переключение бд и тд,
 2. вынести команды, тест в Makefile. Настройки, запуск в файлы *.sh
-3. Настройка статики,
-4. 
+3. Настройка статики, если нужно
+4. добавить гуникрн
+5. добавить Postgres в docker-compose
