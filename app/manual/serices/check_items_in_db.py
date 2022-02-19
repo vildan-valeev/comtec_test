@@ -6,11 +6,13 @@ from manual.models import Item, Manual
 
 
 def having_items(sub_items: List[typeOrderedDict], version: str = None) -> bool:
-    """Проверка есть ли эти элемент(ы)!! в текущей версии справочника
-        a = [OrderedDict([('code', '469'), ..]), OrderedDict([('code', '445'), ..]), ...]
-        b = [OrderedDict([('code', '469'), ..]), ...]
-        all(x in a for x in b) -> Bool
-        """
+    """
+    Проверка есть ли эти элемент(ы)!! в текущей версии справочника
+    Пример:
+    a = [OrderedDict([('code', '469'), ..]), OrderedDict([('code', '445'), ..]), ...]
+    b = [OrderedDict([('code', '469'), ..]), ...]
+    all(x in a for x in b) -> Bool
+    """
     date = datetime.now()
     if version:
         # Если передана версия, то передан один элемент на проверку(в списке один элемент).
@@ -21,6 +23,5 @@ def having_items(sub_items: List[typeOrderedDict], version: str = None) -> bool:
     items = ItemValidateSerializer(data=qs, many=True)
     # items.is_valid(raise_exception=True)  # TODO: дает ошибку почему-то
     items.is_valid()
-    print(items.data)
     return all(x in items.data for x in sub_items)
 

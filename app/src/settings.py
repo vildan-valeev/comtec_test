@@ -120,3 +120,10 @@ SWAGGER_SETTINGS = {
         }
     }
 }
+
+
+CUSTOM_RESPONSES = [
+    {'result': 'ОК'},
+    {'result': 'Нет элемента(ов) в справочнике'},
+    {'result': 'Error'},
+]

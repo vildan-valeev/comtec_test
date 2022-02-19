@@ -9,7 +9,6 @@ class ManualListSerializer(serializers.ModelSerializer):
     С добавлением полей от базового справочника
     """
     id = serializers.CharField(read_only=True, source="manual_base.id")
-    # id_version = serializers.IntegerField(read_only=True, source="id")
     name = serializers.CharField(read_only=True, source="manual_base.name")
     short_name = serializers.CharField(read_only=True, source="manual_base.short_name")
 
@@ -19,7 +18,7 @@ class ManualListSerializer(serializers.ModelSerializer):
 
 
 class ManualListAsOfDateSerializer(ManualListSerializer):
-    """  """
+    """ Сериализатор справочников, актуальных на указанную дату """
     pass
 
 
