@@ -19,16 +19,25 @@ class ManualListSerializer(serializers.ModelSerializer):
 
 
 class ManualListAsOfDateSerializer(ManualListSerializer):
-    """
-
-    """
+    """  """
     pass
 
 
-class ItemListSerializer(serializers.ModelSerializer):
-    """Сериализатор Элемент справочника"""
-    manual = serializers.CharField(read_only=True, source="manual.manual_base.id")
+class ItemSerializer(serializers.ModelSerializer):
+    """Базовый Сериализатор Элемент справочника"""
 
     class Meta:
         model = Item
-        fields = '__all__'
+        exclude = ['id']
+
+
+class ItemListSerializer(ItemSerializer):
+    """Сериализатор Элемент справочника"""
+    manual = serializers.UUIDField(read_only=True, source="manual.manual_base.id")
+
+
+class ItemValidateSerializer(ItemSerializer):
+    """Сериализатор Элемент справочника"""
+    manual = serializers.UUIDField(source="manual.manual_base.id")
+
+
