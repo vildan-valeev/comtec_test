@@ -1,14 +1,23 @@
+import re
+
 from django.test import TestCase
 
-# Create your tests here.
-# def test(s, p):
-#     result = re.fullmatch(pattern=p, string=s)
-#     if result:
-#         print(s, 'yes')
-#     else:
-#         print(s, 'no')
-# p2 = r'(?:0[1-9]|[12][0-9]|3[01])-(?:0[1-9]|1[0-2])-(?:20[12][0-9])'
-#
-# while True:
-#     # time.sleep(0.5)
-#     test(f'{random.randint(1, 31):02d}-{random.randint(1,12):02d}-{random.randint(2010, 2029)}', p2)
+from manual.serices.regex_check import ManualVersionCheck, ManualDateCheck
+
+
+class TestManual(TestCase):
+
+    def setUp(self):
+        self.re_check = [
+            (ManualVersionCheck.regex, False, ['0.0', '00.00', '00.000', '0,0', '00,0', '-10.09', '11.109', 'sd.sd', ]),
+            (ManualVersionCheck.regex, True, ['00.01', '10.99', '91.99', '10.09', '99.99']),
+            (ManualDateCheck.regex, True, ['15-01-2020', '31-12-2022', ]),
+            (ManualDateCheck.regex, False, ['32-01-2020', '15-13-2020', '3-01-2050', '03.01.2050']),
+        ]
+
+    # расчет от 01-01-2010 до 31-12-2059
+
+    def test_regexp_manual_version(self):
+        for p, k, v in self.re_check:
+            for i in v:
+                self.assertEqual(bool(re.fullmatch(pattern=p, string=i)), k)

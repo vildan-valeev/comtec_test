@@ -56,7 +56,10 @@ class ItemCurrentList(ListAPIView):
 
 
 class ItemListByVersion(ListAPIView):
-    """  Получение элементов заданного справочника указанной версии  """
+    """  Получение элементов заданного справочника указанной версии
+
+    00.01 example version
+    """
     serializer_class = ItemListSerializer
 
     @swagger_auto_schema(operation_summary=__doc__)  # Убрать метод, если doc длинный. Вставить другой str, если разные,
