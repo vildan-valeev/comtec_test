@@ -17,7 +17,7 @@ class TestManual(TestCase):
 
     # расчет от 01-01-2010 до 31-12-2059
 
-    def test_regexp_manual_version(self):
+    def test_regexp_manual(self):
         for p, k, v in self.re_check:
             for i in v:
                 self.assertEqual(bool(re.fullmatch(pattern=p, string=i)), k)

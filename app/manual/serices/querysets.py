@@ -17,6 +17,7 @@ def item_current_list(*args, **kwargs) -> QuerySet:
 
 
 def item_list_by_version(*args, **kwargs) -> QuerySet:
+    """Элементы справочника отфильтрованные по указанной версии справочника"""
     date = Manual.objects.filter(manual_base_id=kwargs['id'],
                                  version=kwargs['version']).first().enable_date
     return Item.objects.filter(manual__manual_base_id=kwargs['id'], manual__enable_date__lte=date)
