@@ -11,6 +11,8 @@ from manual.api.v1.serializers import ManualListSerializer, ManualListAsOfDateSe
 from manual.generics.item_views import CustomItemAPIView
 from manual.models import Manual, Item
 from manual.serices.check_items_in_db import having_items
+from manual.serices.querysets import manual_list_date, item_current_list, item_list_by_version
+
 from src.settings import CUSTOM_RESPONSES
 
 
@@ -36,8 +38,8 @@ class ManualListAsOfDate(ListAPIView):
         return super().get(self, request, *args, **kwargs)
 
     def get_queryset(self, *args, **kwargs):
-        """  """
-        return Manual.objects.filter(enable_date__lte=self.kwargs['date'])
+        """ Получаем qs - Справочники отфильтрованные по указанной дате """
+        return manual_list_date(*args, **kwargs)
 
 
 class ItemCurrentList(ListAPIView):
@@ -50,9 +52,7 @@ class ItemCurrentList(ListAPIView):
 
     def get_queryset(self, *args, **kwargs):
         """ """
-        # TODO: вынести в services
-        # по id базового справочника и дате версии находим актуальные - на текущий день
-        return Item.objects.filter(manual__manual_base_id=self.kwargs['id'], manual__enable_date__lte=datetime.now())
+        return item_current_list(*args, **kwargs)
 
 
 class ItemListByVersion(ListAPIView):
@@ -68,11 +68,7 @@ class ItemListByVersion(ListAPIView):
 
     def get_queryset(self, *args, **kwargs):
         """ """
-        print(self.kwargs)
-        # TODO: вынести в services
-        date = Manual.objects.filter(manual_base_id=self.kwargs['id'],
-                                     version=self.kwargs['version']).first().enable_date
-        return Item.objects.filter(manual__manual_base_id=self.kwargs['id'], manual__enable_date__lte=date)
+        return item_list_by_version(*args, **kwargs)
 
 
 class ValidateItems(CustomItemAPIView):
@@ -101,7 +97,6 @@ class ValidateItemByVersion(CustomItemAPIView):
     def post(self, request, *args, **kwargs):
         serializer = ItemValidateSerializer(data=request.data)
         if serializer.is_valid():
-            print(serializer.data)
             # [serializer.data] - передается один элемент вложенный в list,т.к. having_item - общая функция проверки
             if having_items([serializer.data], version=self.kwargs['version']):
                 return Response(CUSTOM_RESPONSES[0], status=status.HTTP_200_OK)
