@@ -2,7 +2,7 @@ import logging
 
 from django.core.management.base import BaseCommand
 
-from utils.generate_fixtures import delete_all
+from utils.generate_fixtures import FixturesGenerator
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +15,8 @@ class Command(BaseCommand):
 
         :return:
         """
-        delete_all()
+        g = FixturesGenerator()
+        g.delete_all()
         return "ОК, бд очищена!"
 
     def handle(self, *args, **options):

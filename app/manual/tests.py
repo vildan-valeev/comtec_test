@@ -3,6 +3,14 @@ import re
 from django.test import TestCase
 
 from manual.serices.regex_check import ManualVersionCheck, ManualDateCheck
+from utils.generate_fixtures import FixturesGenerator
+
+
+class GeneratorForTest(FixturesGenerator):
+    """(день, месяц, час, минута)"""
+    version_dates = [(1, 2, 15, 30), (15, 2, 15, 30), (28, 2, 15, 30)]
+    # def get_random_datetime:
+    #     pass
 
 
 class TestManual(TestCase):
@@ -21,3 +29,10 @@ class TestManual(TestCase):
         for p, k, v in self.re_check:
             for i in v:
                 self.assertEqual(bool(re.fullmatch(pattern=p, string=i)), k)
+
+
+class ModelsTest(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        g = GeneratorForTest()
+        g.gen_fixtures()
