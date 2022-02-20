@@ -10,7 +10,8 @@ from manual.models import Manual, Item, ManualBase
 
 class FixturesGenerator:
     def __init__(self):
-        self.date = datetime(2022, 2, 10, randint(1, 23), 30)
+        #  минус пару дней от сегодня (для тестирования справочников уже актуальных на сегодняшний день)
+        self.date = datetime(2022, 2, datetime.now().day-randint(1, 4), randint(1, 23), 30)
 
     def create_manual_base(self, manual_number: int) -> ManualBase:
         return ManualBase.objects.get_or_create(name=f'Справочник{manual_number}',
